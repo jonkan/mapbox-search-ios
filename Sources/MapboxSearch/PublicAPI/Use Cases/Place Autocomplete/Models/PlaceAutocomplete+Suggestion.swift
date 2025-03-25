@@ -2,7 +2,7 @@ import CoreLocation
 import Foundation
 
 extension PlaceAutocomplete {
-    public struct Suggestion {
+    public struct Suggestion: Sendable {
         /// Place's name.
         public let name: String
 

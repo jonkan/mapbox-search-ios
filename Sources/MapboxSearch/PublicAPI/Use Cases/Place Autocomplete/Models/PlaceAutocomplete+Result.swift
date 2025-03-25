@@ -1,7 +1,7 @@
 import Foundation
 
 extension PlaceAutocomplete {
-    public struct Result {
+    public struct Result: Sendable {
         /// Result name.
         public let name: String
 
