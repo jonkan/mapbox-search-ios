@@ -8,6 +8,7 @@ extension PlaceAutocomplete {
 }
 
 /// Main entrypoint to the Mapbox Place Autocomplete SDK.
+@MainActor
 public final class PlaceAutocomplete {
     private let searchEngine: CoreSearchEngineProtocol
     private let userActivityReporter: CoreUserActivityReporterProtocol
