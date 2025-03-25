@@ -4,7 +4,7 @@
 /// for a concrete address.
 /// Sometimes server may respond with multiple address subtypes for the result. For example, Seoul would have `[.region,
 /// .place]`.
-public enum SearchResultType: Codable, Hashable {
+public enum SearchResultType: Codable, Hashable, Sendable {
     /// Represents address type.
     ///
     /// Can have multiple subtypes. For example, `[.country]` for Country result like Germany or `[.address]` for a
